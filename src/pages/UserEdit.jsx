@@ -20,10 +20,10 @@ function UserEdit() {
   }, [id, dispatch]);
 
   useEffect(() => {
-    if (currentUser) {
+    if (currentUser && id) {
       setUserData(currentUser);
     }
-  }, [currentUser]);
+  }, [currentUser, id]);
 
   const handleChange = (e) => {
     setUserData({

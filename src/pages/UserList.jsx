@@ -13,7 +13,14 @@ function UserList() {
 
   return (
     <div className="container mx-auto p-4">
-      <h3 className="mb-4 text-lg font-semibold">User List</h3>
+      <header className="flex justify-between">
+        <h3 className="mb-4 text-lg font-semibold">User List</h3>
+        <Link to={"/create"}>
+          <button className="rounded bg-green-500 px-3 py-1 text-white">
+            Create
+          </button>
+        </Link>
+      </header>
       {users.map((user) => (
         <div
           key={user.id}
