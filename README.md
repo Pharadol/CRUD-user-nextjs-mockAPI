@@ -1,8 +1,47 @@
-# React + Vite
+# CRUD Users with Next.js and MockAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple CRUD (Create, Read, Update, Delete) application built with Next.js, using Redux for state management and Tailwind CSS for styling. The application interacts with a mock API to perform CRUD operations on user data.
 
-Currently, two official plugins are available:
+## Demo
+You can see a live demo of the project [here](https://crud-user-nextjs-mock-api.vercel.app/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Screenshot](https://img2.pic.in.th/pic/CRUD-users-next-mockAPI.png)
+
+## Features
+- Create User: Add a new user to the list.
+- Read User: View details of all users.
+- Update User: Edit existing user information.
+- Delete User: Remove a user from the list.
+- Routing: Navigation between user list and user form.
+- Styling: Utilizes Tailwind CSS for a responsive design.
+
+## Dependencies
+- React
+- Next.js
+- Redux
+- Redux Thunk
+- React Router DOM
+- Axios
+- Tailwind CSS
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Pharadol/CRUD-user-nextjs-mockAPI
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd CRUD-user-nextjs-mockAPI
+    ```
+
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+4. Start the development server:
+    ```sh
+    npm run dev
+    ```
