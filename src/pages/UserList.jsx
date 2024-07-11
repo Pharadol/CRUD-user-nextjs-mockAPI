@@ -16,7 +16,7 @@ function UserList() {
       <header className="flex justify-between">
         <h3 className="mb-4 text-lg font-semibold">User List</h3>
         <Link to={"/create"}>
-          <button className="rounded bg-green-500 px-3 py-1 text-white">
+          <button className="rounded bg-green-500 px-3 py-1 text-white hover:bg-green-600">
             Create
           </button>
         </Link>
@@ -24,19 +24,19 @@ function UserList() {
       {users.map((user) => (
         <div
           key={user.id}
-          className="flex items-center justify-between border-b py-2"
+          className="flex items-center justify-between border-b py-2 last:border-none"
         >
           <div>
             <p>Name: {user.name}</p>
             <p>Email: {user.email}</p>
-            <p>Phone: {user.phoneNumber}</p>
+            <p>Phone: {user.phone}</p>
           </div>
           <div>
-            <button onClick={() => dispatch(deleteUser(user.id))} className="mr-2 rounded bg-red-500 px-3 py-1 text-white">
+            <button onClick={() => dispatch(deleteUser(user.id))} className="mr-2 rounded bg-red-500 px-3 py-1 text-white hover:bg-red-600">
               Delete
             </button>
             <Link to={`/edit/${user.id}`}>
-              <button className="rounded bg-blue-500 px-3 py-1 text-white">
+              <button className="rounded bg-blue-500 px-3 py-1 text-white hover:bg-blue-600">
                 Edit
               </button>
             </Link>
